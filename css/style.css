@@ -149,3 +149,7 @@ line-height: 22px;
     font-family: var(--fonts);
     font-size: var(--formfontsize);
 }
+input, select, textarea{
+    color: var(--titlecolor);
+    font-family: var(--fonts);
+}
