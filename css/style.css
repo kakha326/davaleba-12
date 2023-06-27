@@ -1,11 +1,12 @@
 /* font-family: 'Poppins', sans-serif; */
-:root{
-    --backgroundcolor:#0F172A;
-    --fonts: font-family: 'Poppins', sans-serif;
+:root {
+    --backgroundcolor: #0F172A;
+    --fonts: 'Poppins', sans-serif;
     --titlecolor: #FFFFFF;
-    --articlecolor:#94A3B8;
+    --articlecolor: #94A3B8;
     --actionbuttoncolor: #2563EB;
     --formfontsize: 14px;
+    --formcolor: #E4E4E7;
 }
 
 .container {
@@ -15,7 +16,7 @@
     display: flex;
     gap: 100px;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     background-color: var(--backgroundcolor);
 }
 
@@ -38,12 +39,45 @@ h1 {
     color: var(--articlecolor);
     font-size: 18px;
     line-height: 30px;
+    margin-bottom: 40px;
 }
 
-.buttonp{
+.firstbutton {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: #1E293B;
+    margin-bottom: 49px;
+}
+
+.buttonp {
     font-family: var(--fonts);
+    color: var(--titlecolor);
     font-size: 16px;
     font-weight: 600;
     line-height: 28px;
     letter-spacing: -0.2px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    color: #E4E4E7;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 17px 22px;
+    border-radius: 35px;
+    border: 1px solid #334155;
+    background-color: transparent;
+    margin-bottom: 24px;
 }
