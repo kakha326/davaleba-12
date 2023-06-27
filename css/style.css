@@ -1,4 +1,12 @@
 /* font-family: 'Poppins', sans-serif; */
+:root{
+    --backgroundcolor:#0F172A;
+    --fonts: font-family: 'Poppins', sans-serif;
+    --titlecolor: #FFFFFF;
+    --articlecolor:#94A3B8;
+    --actionbuttoncolor: #2563EB;
+    --formfontsize: 14px;
+}
 
 .container {
     width: 1440px;
@@ -8,7 +16,7 @@
     gap: 100px;
     justify-content: center;
     align-items: center;
-    background-color: #0F172A;
+    background-color: var(--backgroundcolor);
 }
 
 .img1 {
@@ -16,8 +24,8 @@
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
-    color: #FFF;
+    font-family: var(--fonts);
+    color: var(--titlecolor);
     font-size: 52px;
     font-weight: 600;
     line-height: 62px;
@@ -26,24 +34,14 @@ h1 {
 }
 
 .article {
-    color: #94A3B8;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fonts);
+    color: var(--articlecolor);
     font-size: 18px;
     line-height: 30px;
 }
 
-button {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 16px;
-    border-radius: 35%;
-    
-}
 .buttonp{
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fonts);
     font-size: 16px;
     font-weight: 600;
     line-height: 28px;
