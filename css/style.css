@@ -19,6 +19,9 @@
     align-items: top;
     background-color: var(--backgroundcolor);
 }
+form{
+    width: 430px;
+}
 
 .img1 {
     border-radius: 2%;
@@ -33,7 +36,6 @@ h1 {
     letter-spacing: -2px;
     margin-bottom: 19px;
 }
-
 .article {
     font-family: var(--fonts);
     color: var(--articlecolor);
@@ -64,7 +66,7 @@ h1 {
     letter-spacing: -0.2px;
 }
 
-.label1{
+.label1 {
     display: block;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
@@ -73,7 +75,7 @@ h1 {
     margin-bottom: 10px;
 }
 
-.input1{
+.input1 {
     width: 100%;
     padding: 17px 22px;
     border-radius: 35px;
@@ -81,38 +83,69 @@ h1 {
     background-color: transparent;
     margin-bottom: 24px;
 }
-::placeholder{
+
+::placeholder {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     line-height: 26px;
     color: #94A3B8;
 }
-input[type=checkbox]{
-    appearance: none ;
+
+input[type=checkbox] {
+    appearance: none;
     width: 20px;
     height: 20px;
     border: 1px solid #334155;
     border-radius: 5px;
 }
-input[type=checkbox]:checked::before
-{
-content: "\f00c";
-font-family: "Font Awesome 6 Free";
-font-weight: 900;
-font-size: 20px;
-color: var(--titlecolor);
+
+input[type=checkbox]:checked::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--titlecolor);
 }
 
 
-.checkboxdiv{
+.checkboxdiv {
     display: flex;
     align-items: center;
-    gap: 5px    ;
+    gap: 5px;
     margin-bottom: 31px;
 }
-.checkboxp{
+
+.checkboxp {
     font-family: var(--fonts);
-    color: var(--titlecolor); 
+    color: var(--titlecolor);
     font-size: var(--formfontsize);
 }
 
+input[type=submit] {
+    width: 50%;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50px;
+    background-color: var(--actionbuttoncolor);
+    font-size: 16px;
+    font-family: var(--fonts);
+    color: var(--titlecolor);
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    margin-bottom: 20px;
+}
+.lastp{
+    color: #64748B;
+font-size: 14px;
+font-family: var(--fonts);
+line-height: 22px;
+}
+.linkp{
+    color: var(--actionbuttoncolor);
+    font-family: var(--fonts);
+    font-size: var(--formfontsize);
+}
